@@ -8,31 +8,29 @@
     <title>Decodificador de Texto</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <img class="imagem__alura" src="img/Vector.png">
-    </header>
-    <main class="apresentacao">
+    <main>
+        <header><img src="/img/logo.svg" alt="Logo da Alura"></header>
         <section class="apresentacao__conteudo">
-            <input placeholder="Digite um texto" class="apresentacao__conteudo__texto" type="text">  
-            <p class="apresentacao__aviso">Apenas letras minusculas e sem acento.</p>
+            <textarea placeholder="Digite um texto" type="text"></textarea>
+            <div class="apresentacao__informativa">
+                <img 
+                    src="img/icon.svg"
+                    width="16"
+                    height="16"
+                >
+                <span>Apenas letras minúsculas e sem acento</span>
+            </div>
             <div class="apresentacao__botoes">
-                <button onclick="verificarCriptografia()" class="primeiro__botao">Criptografar</button>
-                <button onclick="verificarDescriptografia()" class="segundo__botao">Descriptografar</button>
+                <button class="primeiro__botao">Criptografar</button>
+                <button class="segundo__botao">Descriptografar</button>
             </div>
         </section>
-        <div style='position:relative; top:0px; left:0px;'>
-        <img class ="apresentacao__imagens1" src="/img/rectangle1.png">
-        <div style='position:absolute; top:110px; left:5px; text-align:center;'>
-        <img class="apresentacao__imagens2" src="/img/menino.png">
-        <div style='position:relative; top:110px; left:5px;'>
-        <img class="apresentacao__imagens3" src="/img/nenhumamensagem.png">
-        <div style='position:relative; top:25px; left:5px;'>
-        <img class="apresentacao__imagens4" src="/img/digiteumtexto.png">
-
-        
+       <section class="apresentacao__resultado">
+        <img src="/img/hero.svg" alt="Pessoa analisando um diamante com uma lupa!">
+            <p class="aviso1">Nenhuma mensagem encontrada</p>
+            <p class="aviso2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+       </section>
     </main>
-    <footer class="rodape">
-        <p>Desenvolvido por Edla Goveia</p>
-     </footer>
+    <footer>Desenvolvido por <a href="https://github.com/rekoteh">Edla Goveia</a></footer>
 </body>
 </html>
