@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <title>Decodificador de Texto</title>
+    <script src="app.js" defer></script>
 </head>
 <body>
     <main>
@@ -20,12 +21,12 @@
                 >
                 <span>Apenas letras minúsculas e sem acento</span>
             </div>
-            <div class="apresentacao__botoes">
-                <button class="primeiro__botao">Criptografar</button>
-                <button class="segundo__botao">Descriptografar</button>
+            <div class="apresentacao__principal">
+                <button onclick="verificarCriptografia()" class="primeiro__botao">Criptografar</button>
+                <button onclick="verificarDescriptografia()" class="segundo__botao">Descriptografar</button>
             </div>
         </section>
-       <section class="apresentacao__resultado">
+       <section id="apresentacao__texto" class="apresentacao__resultado">
         <img src="/img/hero.svg" alt="Pessoa analisando um diamante com uma lupa!">
             <p class="aviso1">Nenhuma mensagem encontrada</p>
             <p class="aviso2">Digite um texto que você deseja criptografar ou descriptografar.</p>

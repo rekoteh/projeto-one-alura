@@ -57,23 +57,34 @@ textarea {
 .notificacao {
     background-color: white ;
 }
-.apresentacao__botoes {
+.apresentacao__principal {
   display:flex;
   align-items: flex-start;
   justify-content: space-evenly;
-  gap:1.5rem
-  
+  gap:1.5rem;
 }
+
 .primeiro__botao {
     background-color: #0A3871;
     color: white;
     min-width: 20.5rem;
     padding: 1.5rem;
     border-radius: 1.5rem;
+    transition: filter 0.2s ease-in-out;
 }
 
+.primeiro__botao:hover {
+    filter: brightness(1.25);
+    cursor: pointer;
+}
+
+.segundo__botao:hover {
+    filter: brightness(1.25);
+    cursor: pointer;
+}
 .segundo__botao {
-    background-color:#D8DFE8 ;
+    background-color:#D8DFE8;
+    transition: filter 0.2s ease-in-out;
     color: var(--color);
     min-width: 20.5rem;
     padding: 1.5rem;
