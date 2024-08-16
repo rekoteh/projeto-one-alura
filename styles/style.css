@@ -54,9 +54,6 @@ textarea {
     text-align: left;
 }
 
-.notificacao {
-    background-color: white ;
-}
 .apresentacao__principal {
   display:flex;
   align-items: flex-start;
@@ -64,7 +61,7 @@ textarea {
   gap:1.5rem;
 }
 
-.primeiro__botao {
+.apresentacao__botao__destaque {
     background-color: #0A3871;
     color: white;
     min-width: 20.5rem;
@@ -73,16 +70,16 @@ textarea {
     transition: filter 0.2s ease-in-out;
 }
 
-.primeiro__botao:hover {
+.apresentacao__botao__destaque:hover {
     filter: brightness(1.25);
     cursor: pointer;
 }
 
-.segundo__botao:hover {
+.apresentacao__botoes__base:hover {
     filter: brightness(1.25);
     cursor: pointer;
 }
-.segundo__botao {
+.apresentacao__botoes__base {
     background-color:#D8DFE8;
     transition: filter 0.2s ease-in-out;
     color: var(--color);
@@ -102,6 +99,15 @@ textarea {
     justify-content: center;
     text-align: center;
     align-items: center;
+}
+
+.texto__resultado {
+    display: flex;
+    text-align:left;
+    flex-grow: 1;
+    color:#495057;
+    font-size: 2rem;
+
 }
 
 .aviso1  {
