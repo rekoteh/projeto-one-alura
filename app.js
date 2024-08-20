@@ -1,8 +1,11 @@
 //texto.length: tamanho do texto
 //value: pega o valor do textarea
 function verificarCriptografia() {
-    const texto = document.querySelector('textarea').value;
-    let criptografia = ''
+    const messageBox = document.querySelector('#messageBox');
+    const texto = messageBox.value;
+    messageBox.value = '';
+
+    let criptografia = '';
     for(let i = 0; i < texto.length; i++) {
         switch (texto[i]) {
             case 'a':
@@ -28,7 +31,9 @@ function verificarCriptografia() {
 }
         
 function verificarDescriptografia() {
-    const texto = document.querySelector('textarea').value;
+    const messageBox =document.querySelector('#messageBox');
+    const texto = messageBox.value;
+    messageBox.value = '';
     let i = 0;
     let descriptografia = '';
 
@@ -63,9 +68,9 @@ function copiarParaAreaDeTransferencia () {
 }
 
 function resultado(texto) {
-    let paragrafo = document.createElement('p');
-    paragrafo.classList.add('texto__resultado');
-    paragrafo.textContent= texto;
+    let textarea = document.createElement('textarea');
+   textarea.classList.add('texto__resultado');
+    textarea.textContent= texto;
 
     let button = document.createElement('button');
     button.innerText= 'Copiar';
@@ -74,9 +79,10 @@ function resultado(texto) {
 
     let apresentacao = document.querySelector('#apresentacao__texto');
     apresentacao.innerHTML = '';
-    apresentacao.appendChild(paragrafo);
+    apresentacao.appendChild(textarea);
     apresentacao.appendChild(button);
 }
+
 
 /* function resultado(texto) {
     // Limpa a seção de resultado

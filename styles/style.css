@@ -23,6 +23,7 @@ main {
     gap: 10rem;
     flex-grow: 1;
     padding: 1.5rem;
+    justify-content: space-evenly;
 }
 
 header {
@@ -53,6 +54,11 @@ textarea {
     background-color: var(--bg-color);
     text-align: left;
 }
+
+textarea::placeholder {
+    color: var(--color);
+}
+
 
 .apresentacao__principal {
   display:flex;
@@ -105,9 +111,9 @@ textarea {
     display: flex;
     text-align:left;
     flex-grow: 1;
-    color:#495057;
     font-size: 2rem;
-
+    color:#495057;
+    background-color: white;
 }
 
 .aviso {
@@ -129,3 +135,4 @@ footer {
 footer a {
     color: var(--color);
 }
+
