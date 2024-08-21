@@ -64,7 +64,7 @@ textarea::placeholder {
   display:flex;
   align-items: flex-start;
   justify-content: space-evenly;
-  gap:1.5rem;
+  gap: 1.5rem;
 }
 
 .apresentacao__botao__destaque {
