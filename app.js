@@ -69,7 +69,8 @@ function copiarParaAreaDeTransferencia () {
 
 function resultado(texto) {
     let textarea = document.createElement('textarea');
-   textarea.classList.add('texto__resultado');
+    textarea.classList.add('texto__resultado');
+    textarea.setAttribute("disabled", true);
     textarea.textContent= texto;
 
     let button = document.createElement('button');
